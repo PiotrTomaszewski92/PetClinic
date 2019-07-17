@@ -20,7 +20,7 @@ public class OwnerRestController {
         this.ownerDAO = ownerDAO;
     }
 
-    @GetMapping("/")
+    @GetMapping("/owners")
     public List<Owner> getAll(){
         return ownerDAO.getOwnersList();
     }
